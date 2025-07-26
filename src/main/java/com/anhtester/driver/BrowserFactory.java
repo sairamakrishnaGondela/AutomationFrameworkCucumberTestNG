@@ -25,6 +25,14 @@ import static java.lang.Boolean.TRUE;
 
 public enum BrowserFactory {
 
+    //Broser Factory class is used created
+    /*Responsibility: Knows how to build each browser instance (Chrome, Firefox, Edge) for both local and remote runs.
+
+Why it helps:
+
+Open‑Closed: To add a new browser (e.g. Safari on grid), you simply add a new factory method or enum constant, without touching TargetFactory or DriverManager.
+
+Testability: You can write unit tests for each factory method in isolation, verifying Chrome options vs. Edge options, etc.*/
     CHROME {
         @Override
         public WebDriver createDriver() {

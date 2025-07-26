@@ -114,13 +114,14 @@ public final class FrameworkConstants {
 
     public static final String ICON_BROWSER_PREFIX = "<i class=\"fa fa-";
     public static final String ICON_BROWSER_SUFFIX = "\" aria-hidden=\"true\"></i>";
-    /* ICONS - END */
+    public static final String bevakoof= "I" ;   /* ICONS - END */
 
     public static String getExtentReportFilePath() {
         if (EXTENT_REPORT_FILE_PATH.isEmpty()) {
             EXTENT_REPORT_FILE_PATH = ReportUtils.createExtentReportPath();
         }
         return EXTENT_REPORT_FILE_PATH;
+
     }
 
 }
